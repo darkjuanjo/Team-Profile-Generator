@@ -8,6 +8,24 @@ test('create an Employee object', () => {
     expect(employee.email).toBe('myemail@email.com');
 });
 
+test('Check name to be string', () => {
+    const employee = new Employee('Juan', 1, 'myemail@email.com');
+
+    expect(employee.name).toEqual(expect.any(String));
+});
+
+test('Check id to be number', () => {
+    const employee = new Employee('Juan', 1, 'myemail@email.com');
+
+    expect(employee.id).toEqual(expect.any(Number));
+});
+
+test('Check email to be string', () => {
+    const employee = new Employee('Juan', 1, 'myemail@email.com');
+
+    expect(employee.email).toEqual(expect.any(String));
+});
+
 test(' get Employee name', () => {
     const employee = new Employee('Juan', 1, 'myemail@email.com');
 

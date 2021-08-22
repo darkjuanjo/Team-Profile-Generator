@@ -9,6 +9,30 @@ test('Create Intern Object', () => {
     expect(intern.school).toBe('Berkely');
 });
 
+test('Check name to be string', () => {
+    const intern = new Intern('David', 3, 'myEmail@email.com', 'Berkely');
+
+    expect(intern.name).toEqual(expect.any(String));
+});
+
+test('Check id to be number', () => {
+    const intern = new Intern('David', 3, 'myEmail@email.com', 'Berkely');
+
+    expect(intern.id).toEqual(expect.any(Number));
+});
+
+test('Check email to be string', () => {
+    const intern = new Intern('David', 3, 'myEmail@email.com', 'Berkely');
+
+    expect(intern.email).toEqual(expect.any(String));
+});
+
+test('Check School to be string', () => {
+    const intern = new Intern('David', 3, 'myEmail@email.com', 'Berkely');
+
+    expect(intern.school).toEqual(expect.any(String));
+});
+
 test('Get Intern School', () => {
     const intern = new Intern('David', 3, 'myEmail@email.com', 'Berkely');
 

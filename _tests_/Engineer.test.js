@@ -9,6 +9,30 @@ test('Create Engineer Object', () => {
     expect(engineer.github).toBe('github');
 });
 
+test('Check name to be string', () => {
+    const engineer = new Engineer('Juan', 1, 'myemail@email.com', 'github');
+
+    expect(engineer.name).toEqual(expect.any(String));
+});
+
+test('Check id to be number', () => {
+    const engineer = new Engineer('Juan', 1, 'myemail@email.com', 'github');
+
+    expect(engineer.id).toEqual(expect.any(Number));
+});
+
+test('Check email to be string', () => {
+    const engineer = new Engineer('Juan', 1, 'myemail@email.com', 'github');
+
+    expect(engineer.email).toEqual(expect.any(String));
+});
+
+test('Check github username to be string', () => {
+    const engineer = new Engineer('Juan', 1, 'myemail@email.com', 'github');
+
+    expect(engineer.github).toEqual(expect.any(String));
+});
+
 test('Get Engineer Github', () => {
     const engineer = new Engineer('Mike', 2, 'myEmail@email.com', 'github');
 
