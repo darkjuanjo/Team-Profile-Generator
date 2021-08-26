@@ -27,7 +27,7 @@ The purpose of this project is to generate html webpage that displays the info o
 
 Preview!
 
-https://drive.google.com/file/d/1cCfnPgmSSnYFEqJpGo1hYdnBPFSQcNOM/view
+https://drive.google.com/file/d/1xUMeIybTry3vX9upxQw3xnK2HX7fE7Hr/view?usp=sharing
 
 
 
