@@ -2,6 +2,7 @@ const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 const template = require('./src/template');
+const MyTeam = require('./src/save-file');
 const inquirer = require('inquirer');
 
 const addEmployee = teamMembers => {
@@ -173,4 +174,5 @@ let generateObject = employees => {
 addEmployee()
 .then(generateObject)
 .then(template)
-.then(webpage => console.log(webpage));
+.then(MyTeam.writeFile)
+.then(MyTeam.copyCSS);

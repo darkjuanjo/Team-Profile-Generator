@@ -23,7 +23,7 @@ function GenerateEmployeeCard(data) {
                         <ul class="content-list">
                             <li>ID: ${id}</li>
                             <li><a href="mailto:${email}">Email: ${email}</a></li>
-                            <li><a href="tel:${officeNumber}">${officeNumber}</a></li>
+                            <li><a href="tel:${officeNumber}">Office Number: ${officeNumber}</a></li>
                         </ul>
                     </div>
                 </section>
