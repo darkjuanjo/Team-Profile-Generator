@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(232, 71, 86);
+    color: white;
+    margin: 30px;
+    height: 150px;
+    padding: 50px;
+    text-align: center;
+}
+
+#team-container{
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.card{
+    background-color: rgb(246, 247, 249);
+    width: 270px;
+    height: 280px;
+    margin: 20px;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.card-header {
+    background-color: rgb(0, 119, 247);
+    color: white;
+    height:80px;
+    text-align: center;
+}
+
+.card-header h2 {
+    padding-top: 15px;
+}
+
+.card-header h3 {
+    margin-bottom: 10px;
+}
+
+.subtitle-container {
+    display: flex;
+    justify-content: center;
+}
+
+span {
+    margin-right: 10px;
+    padding-top: 10px;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+#Manager {
+    background-image: url('../src/assets/icons/Manager.svg');
+    display: inline-block;
+    background-size: 20px 20px;
+    height: 20px;
+    width: 20px;
+}
+
+#Engineer {
+    background-image: url('../src/assets/icons/Engineer.svg');
+    display: inline-block;
+    background-size: 25px 25px;
+    height: 25px;
+    width: 25px;
+}
+
+#Intern {
+    background-image: url('../src/assets/icons/Intern.svg');
+    display: inline-block;
+    background-size: 25px 25px;
+    height: 25px;
+    width: 25px;
+}
+
+
+.content-list {
+    background-color: white;
+    color:black;
+    list-style: none;
+    text-align: left;
+    margin: 40px 10px;
+    
+}
+
+.content-list li {
+    border: 2px solid rgb(225, 225, 225);
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    word-wrap: break-word;
+}

@@ -1,6 +1,7 @@
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
+const template = require('./src/template');
 const inquirer = require('inquirer');
 
 const addEmployee = teamMembers => {
@@ -171,4 +172,5 @@ let generateObject = employees => {
 
 addEmployee()
 .then(generateObject)
-.then(array => console.log(array));
+.then(template)
+.then(webpage => console.log(webpage));
